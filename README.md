@@ -149,9 +149,3 @@
 
 本项目采用MIT许可证 - 详见 [LICENSE](LICENSE) 文件
 
-## 联系方式
-
-- 项目维护者: L0v3ch4n, LongziJasonyang, heimaliu
-- 项目仓库: [Cuber-Wei/SuSG2025-KylinAiAssistant](https://github.com/Cuber-Wei/SuSG2025-KylinAiAssistant)
-- 问题反馈: 请通过GitHub Issues提交问题或功能建议
-- 技术支持: 可在项目讨论区或通过提交Issue获取帮助
