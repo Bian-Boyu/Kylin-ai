@@ -2,8 +2,6 @@
 
 基于银河麒麟操作系统的多功能AI交互助手，支持文本对话、语音交互和角色定制功能。通过整合麒麟AI SDK，实现了便捷、智能的用户交互体验。
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-
 ## 系统要求
 
 - **操作系统**：银河麒麟操作系统 V2503 或更高版本
@@ -13,7 +11,7 @@
   - 处理器：建议Intel Core i5-8代或更高性能
   - 内存：4GB+ 内存 (推荐8GB及以上)
   - 存储：10GB+ 可用磁盘空间
-  - 外设：麦克风和扬声器（用于语音交互）
+  - 外设：麦克风和扬声器（用于语音交互）(还没实现)
 
 ## 功能特性
 
@@ -23,12 +21,12 @@
 - 智能回答各类问题，提供专业建议
 - 支持自定义系统提示词，增强回答质量
 
-### 语音交互
+### 语音交互（暂未实现）
 - 实时语音识别，支持普通话
 - 高品质语音合成，流畅自然
 
 ### 角色系统
-- 内置专业角色（律师、教师、程序员、作家）
+- 内置专业角色（律师、教师、程序员、护士、作家）
 - 完全自定义角色，设置专属提示词
 - 一键切换角色，满足不同场景需求
 - 角色配置数据自动保存和加载
@@ -41,11 +39,6 @@
 │   ├── icons/       # 图标文件
 │   └── styles/      # 样式文件
 ├── src/              # 源代码
-│   ├── core/        # 核心功能
-│   │   ├── chat/   # 聊天相关
-│   │   ├── role/   # 角色管理
-│   │   └── voice/  # 语音处理
-│   └── ui/          # 界面相关
 ├── include/          # 头文件目录
 └── docs/             # 文档目录
 ```
@@ -73,8 +66,8 @@
 
 1. 克隆仓库：
    ```bash
-   git clone https://github.com/Cuber-Wei/SuSG2025-KylinAiAssistant.git
-   cd SuSG2025-KylinAiAssistant
+   git clone https://gitee.com/bian-boyu/kylin-ai.git
+   cd KylinAiAssistant
    ```
 
 2. 使用qmake构建项目：
@@ -85,7 +78,7 @@
 
 3. 运行程序：
    ```bash
-   ./SuSG2025-KylinAiAssistant
+   ./KylinAiAssistant
    ```
    
 > 或使用一键式编译运行脚本：
@@ -97,7 +90,7 @@
 
 1. 使用Qt Creator打开项目：
    ```bash
-   qtcreator SuSG2025-KylinAiAssistant.pro
+   qtcreator KylinAiAssistant.pro
    ```
 
 2. 在IDE中配置构建环境并运行项目
@@ -145,7 +138,4 @@
    - 在设置中可选择不同的本地或云端模型
    - 不同模型有各自的特点，可根据需求选择
 
-## 许可证
-
-本项目采用MIT许可证 - 详见 [LICENSE](LICENSE) 文件
 
