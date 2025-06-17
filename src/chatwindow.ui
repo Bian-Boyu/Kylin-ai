@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChatWindow</class>
+ <widget class="QWidget" name="ChatWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>聊天窗口</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="roleLabel">
+       <property name="styleSheet">
+        <string notr="true">font-family: &quot;Microsoft YaHei&quot;; /* 设置字体类型 */
+font-size: 12pt; /* 设置字体大小 */
+font-weight: bold; /* 设置字体加粗 */</string>
+       </property>
+       <property name="text">
+        <string>当前角色：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="roleComboBox">
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-family: &quot;Microsoft YaHei&quot;; /* 设置字体类型 */
+font-size: 12pt; /* 设置字体大小 */
+font-weight: bold; /* 设置字体加粗 */</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="newRoleButton">
+       <property name="styleSheet">
+        <string notr="true">font-family: &quot;Microsoft YaHei&quot;; /* 设置字体类型 */
+font-size: 12pt; /* 设置字体大小 */
+font-weight: bold; /* 设置字体加粗 */</string>
+       </property>
+       <property name="text">
+        <string>新建一个角色</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTextEdit" name="chatDisplay">
+     <property name="styleSheet">
+      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, stop:0 rgba(248, 230, 255), stop:1 rgb(85, 255, 255));
+    border: 1px solid #ccc;
+    color: black;</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTextEdit" name="messageEdit">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, stop:0 rgba(248, 230, 255), stop:1 rgb(85, 255, 255));
+    border: 1px solid #ccc;
+    color: black;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="sendButton">
+     <property name="styleSheet">
+      <string notr="true">font-family: &quot;Microsoft YaHei&quot;; /* 设置字体类型 */
+font-size: 12pt; /* 设置字体大小 */
+font-weight: bold; /* 设置字体加粗 */</string>
+     </property>
+     <property name="text">
+      <string>发送</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="voiceButton">
+     <property name="styleSheet">
+      <string notr="true">font-family: &quot;Microsoft YaHei&quot;; /* 设置字体类型 */
+font-size: 12pt; /* 设置字体大小 */
+font-weight: bold; /* 设置字体加粗 */</string>
+     </property>
+     <property name="text">
+      <string>语音</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

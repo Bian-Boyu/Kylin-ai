@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>基于麒麟操作系统的多功能智能助手</string>
+  </property>
+  <property name="toolTip">
+   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;基于麒麟操作系统的多功能智能助手&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, stop:0 rgba(248, 230, 255), stop:1 rgb(85, 255, 255));
+    border: 1px solid #ccc;
+    color: black;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, stop:0 rgba(248, 230, 255), stop:1 rgb(85, 255, 255));
+    border: 1px solid #ccc;
+    color: black;</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="chatPage">
+       <property name="styleSheet">
+        <string notr="true">font: 75 12pt &quot;Noto Sans CJK SC&quot;;</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="ChatWindow" name="chatWindow" native="true"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="rolePage">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="RoleManager" name="roleManager" native="true">
+          <property name="styleSheet">
+           <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, stop:0 rgba(248, 230, 255), stop:1 rgb(85, 255, 255));
+    border: 1px solid #ccc;
+    color: black;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>37</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>功能</string>
+    </property>
+    <addaction name="actionSwitchToChat"/>
+    <addaction name="actionSwitchToRole"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSwitchToChat">
+   <property name="text">
+    <string>聊天</string>
+   </property>
+  </action>
+  <action name="actionSwitchToRole">
+   <property name="text">
+    <string>角色管理</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ChatWindow</class>
+   <extends>QWidget</extends>
+   <header>chatwindow.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>RoleManager</class>
+   <extends>QWidget</extends>
+   <header>rolemanager.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
