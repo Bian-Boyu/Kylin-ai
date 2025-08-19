@@ -118,21 +118,24 @@
 3. 点击麦克风按钮可切换到语音输入模式
 4. 对话历史会自动保存
 
+<img width="397" height="134" alt="image" src="https://github.com/user-attachments/assets/22cf357d-0111-4b2a-b073-ad4de04bc8fc" />
+
+
 ### 角色管理
 1. 点击"新建角色"创建自定义角色
 2. 设置角色名称、描述和提示词后保存
 3. 内置角色不可删除，但可以自定义同类型角色
 
-### 语音功能
-1. 点击录音按钮开始语音输入
-2. 再次点击结束录音，语音将自动转换为文字
-3. 编辑文字内容确认无误后点击发送
-4. 需确保系统已正确配置麦克风设备
+<img width="450" height="300" alt="image" src="https://github.com/user-attachments/assets/47ed9671-d04b-4f2f-89d8-cefe7b9a7f70" />
+
 
 ### 高级功能
 1. 自定义系统提示词
    - 在角色管理中可为每个角色设置系统提示词
    - 良好的提示词能显著提高回答质量
+
+<img width="365" height="292" alt="image" src="https://github.com/user-attachments/assets/f243a0c3-f14b-4394-ab65-07657b67007c" />
+
 
 2. 模型切换
    - 在设置中可选择不同的本地或云端模型
